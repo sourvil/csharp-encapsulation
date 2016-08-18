@@ -16,6 +16,7 @@ namespace csharp_encapsulation
             human.BirthYear = 1980;        // public
             human.WorkStartYear = 2000;
             Console.WriteLine("Work Experience: {0} year(s)",  human.WorkExperienceYear);  // internal
+            human.VirtualPublicMethod();
             //Console.WriteLine("Age: {0}", human.Age);  // protected -- error
 
             Baby baby = new Baby();
@@ -23,6 +24,7 @@ namespace csharp_encapsulation
             baby.BirthYear = 2010;
             //baby._workStartYear = 2015; // private -- error
             Console.WriteLine("BabyAge: {0}", baby.BabyAge); // public/protected - derived class
+            baby.VirtualPublicMethod();
 
             Console.ReadLine();
         }

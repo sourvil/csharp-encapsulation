@@ -48,5 +48,14 @@ namespace csharp_encapsulation
 
         internal int WorkExperienceYear { get { return DateTime.Now.Year - this._workStartYear; } }
 
+        public void PublicMethod() {
+            Console.WriteLine("PublicMethod run");
+        }
+
+        virtual public void VirtualPublicMethod()
+        {
+            Console.WriteLine("VirtualPublicMethod run");
+        }
+
     }
 }
